@@ -50,8 +50,6 @@ x-airflow-common:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    AIRFLOW_CONN_YAHOO_FINANCE_API: get://https%3A%2F%2Fyfapi.net
-    AIRFLOW_CONN_MSSQL_DB: "odbc://${AZURE_SERVER_UID}:${AZURE_SERVER_PASSWORD}@${AZURE_SERVER_NAME}/?Driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=no&Encrypt=yes"
     # For backward compatibility, with Airflow <2.3
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
