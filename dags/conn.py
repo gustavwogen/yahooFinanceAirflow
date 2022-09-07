@@ -9,18 +9,9 @@ import pyodbc
 
 
 
+hook = OdbcHook(odbc_conn_id="projects_conn")
 
+print(hook.get_uri())
+print()
+print(hook.odbc_connection_string)
 
-# with conn.get_sqlalchemy_connection() as conn:
-#     print('hello')
-
-# conn.conn_name_attr = 'odbc_test'
-# print('conn attr:', conn.connection)
-# for key, val in dict(sorted(os.environ.items())).items():
-#     print(f"{key}: {val}")
-# s = conn.odbc_connection_string()
-# print(s)
-
-
-
-# pyodbc.connect('DSN=MSSQLServerDatabase;UID=myuid;PWD=mypwd')

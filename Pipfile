@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+apache-airflow-providers-odbc = "*"
 
 [dev-packages]
 
